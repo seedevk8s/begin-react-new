@@ -3,8 +3,9 @@ import React from "react";
 function Hello({color, name, isSpecial}) {     {/* isSpecial 값도 가져옴  */}
     return (
         <div style={{
-        color
+            color
         }}>
+            {isSpecial ? <b>*</b> : null}
             안녕하세요. {name}
         </div>
     );
