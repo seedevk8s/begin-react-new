@@ -4,7 +4,9 @@ function Hello({color, name, isSpecial}) {     {/* isSpecial 값도 가져옴  *
     return (
         <div style={{
         color
-    }}>안녕하세요. {name}</div>
+        }}>
+            안녕하세요. {name}
+        </div>
     );
 }
 
