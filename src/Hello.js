@@ -1,10 +1,9 @@
 import React from "react";
 
-function Hello(props) {
-    console.log(props);
+function Hello({color, name}) {
     return <div style={{
-        color: props.color
-    }}>안녕하세요. {props.name}</div>;
+        color: color
+    }}>안녕하세요. {name}</div>;
 }
 
 export default Hello;
