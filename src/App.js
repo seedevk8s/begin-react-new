@@ -12,6 +12,7 @@ function App() {
     };
       return (
         <>
+            {/* 주석이므로 브라우저에 나타나지 않음 */}
             <Hello/>
             <div style={style}>{name}</div>
             <div className="gray-box"></div>
