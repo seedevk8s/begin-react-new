@@ -6,6 +6,8 @@ function Wrapper() {
         padding: 16
     };
 
+    return <div style={style}></div>
 }
 
+export default Wrapper;
 
