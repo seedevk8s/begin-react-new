@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 function App() {
       return (
         <Wrapper>
-          <Hello name="react!" color="red"/>
+          <Hello name="react!" color="red"/>  {/* name, color가 props임*/}
           <Hello color="pink"/>
         </Wrapper>
       )
