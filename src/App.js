@@ -13,8 +13,12 @@ function App() {
       return (
         <>
             {/* 주석이므로 브라우저에 나타나지 않음 */}
-            <Hello/>
-            <div style={style}>{name}</div>
+            <Hello
+                // 이런식으로 작성하는 주석문은 화면에 안나타남.
+            />
+            <div
+                // 이런식으로 작성하는 주석문은 화면에 안나타남.
+                style={style}>{name}</div>
             <div className="gray-box"></div>
         </>
       )
