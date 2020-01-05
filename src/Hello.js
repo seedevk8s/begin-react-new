@@ -5,7 +5,7 @@ function Hello({color, name, isSpecial}) {     {/* isSpecial 값도 가져옴  *
         <div style={{
             color
         }}>
-            {isSpecial ? <b>*</b> : null}
+            {isSpecial && <b>*</b>}
             안녕하세요. {name}
         </div>
     );
