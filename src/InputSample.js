@@ -8,8 +8,7 @@ function InputSample() {
     const { name, nickname } = inputs;
 
     const onChange = (e) => {
-        console.log(e.target.name);
-        console.log(e.target.value);
+        const { name, value } = e.target;
     };
 
     const onReset = () => {
