@@ -10,15 +10,17 @@ function InputSample() {
     const onChange = (e) => {
         const { name, value } = e.target;
 
-        const nextInputs = {
+        setInputs({
             ...inputs,
             [name]: value,
-        };
-
-        setInputs(nextInputs);
+        });
     };
 
     const onReset = () => {
+        setInputs({
+            name: '',
+            nickname: '',
+        })
     };
 
     return (
