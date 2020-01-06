@@ -9,6 +9,9 @@ function InputSample() {
 
     const onChange = (e) => {
         const { name, value } = e.target;
+        setInputs({
+
+        });
     };
 
     const onReset = () => {
