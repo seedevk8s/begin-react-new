@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function InputSample() {
+    const [text, setText] = useState('');
+
     const onChange = (e) => {
-        console.log(e.target);
+        console.log(e.target.value);
     }
 
     return (
