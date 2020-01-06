@@ -9,9 +9,12 @@ function InputSample() {
 
     const onChange = (e) => {
         const { name, value } = e.target;
-        setInputs({
 
-        });
+        const nextInputs = {
+            ...inputs
+        }
+
+        setInputs(value);
     };
 
     const onReset = () => {
