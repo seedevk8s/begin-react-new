@@ -8,6 +8,8 @@ function InputSample() {
     const { name, nickname } = inputs;
 
     const onChange = (e) => {
+        console.log(e.target.name);
+        console.log(e.target.value);
     };
 
     const onReset = () => {
@@ -15,8 +17,8 @@ function InputSample() {
 
     return (
         <div>
-            <input placeholder="이름"/>
-            <input placeholder="닉네임"/>
+            <input name="name" placeholder="이름" onChange={onChange}/>
+            <input name="nickname" placeholder="닉네임" onChange={onChange}/>
             <button onClick={onReset}>초기화</button>
             <div>
                 <b>값: </b>
