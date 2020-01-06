@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
 function InputSample() {
+    const [inputs, setInputs] = useState({
+
+    });
+
     const onChange = (e) => {
     };
 
