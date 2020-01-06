@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 function InputSample() {
     const [inputs, setInputs] = useState({
-
+        name: '',
+        nickname: '',
     });
 
     const onChange = (e) => {
