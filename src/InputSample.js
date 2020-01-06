@@ -11,10 +11,11 @@ function InputSample() {
         const { name, value } = e.target;
 
         const nextInputs = {
-            ...inputs
-        }
+            ...inputs,
+            [name]: value,
+        };
 
-        setInputs(value);
+        setInputs(nextInputs);
     };
 
     const onReset = () => {
