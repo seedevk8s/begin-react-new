@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 
 function Counter() {
-    const [number, setNumber] = useState(0);        {/*첫번째 넘버를 number, 두번재 넘버를 setNumber 상태로 할당*/}
+    const [number, setNumber] = useState(0);        {/*첫번째 넘버-현재상태 number, 두번재 넘버-바꾸는 함수 setNumber 상태로 할당*/}
 
     const onIncrease = () => {
-        setNumber(number + 1);
+        setNumber(prevNumber => prevNumber + 1);
     }
     const onDecrease = () => {
-        setNumber(number - 1);
+        setNumber(prevNumber => prevNumber - 1);
     }
 
     return (
