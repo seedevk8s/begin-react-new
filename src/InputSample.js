@@ -14,6 +14,7 @@ function InputSample() {
             <button onClick={onReset}>초기화</button>
             <div>
                 <b>값: </b>
+                이름 (닉네임)
             </div>
         </div>
     );
