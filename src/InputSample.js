@@ -5,6 +5,7 @@ function InputSample() {
         name: '',
         nickname: '',
     });
+    const { name, nickname } = inputs;
 
     const onChange = (e) => {
     };
