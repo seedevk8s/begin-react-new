@@ -1,6 +1,10 @@
 import React from 'react';
 
 function InputSample() {
+    const onChange = (e) => {
+
+    }
+
     return (
         <div>
             <input/>
