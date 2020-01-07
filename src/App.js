@@ -10,6 +10,8 @@ function App() {
        email: ''
     });
 
+    const { username, email } = inputs;
+
     const users = [
         {
             id: 1,
