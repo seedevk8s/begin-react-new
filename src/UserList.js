@@ -5,7 +5,7 @@ function User({ user, onRemove }) {
     return (
         <div>
             <b>{user.username}</b> <span>({user.email})</span>
-            <button>삭제</button>
+            <button onClick={() => onRemove(user.id)}>삭제</button>
         </div>
     );
 }
