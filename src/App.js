@@ -56,7 +56,7 @@ function App() {
     };
 
     const onRemove = id => {
-
+        setUsers(users.filter(user => user.id !== id));
     };
 
       return (
