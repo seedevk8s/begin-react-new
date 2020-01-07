@@ -45,7 +45,7 @@ function App() {
           username,
           email
         };
-        setUsers([...user, user]);
+        setUsers([...users, user]);
 
         setInputs({
            username: '',
