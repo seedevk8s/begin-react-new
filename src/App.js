@@ -55,6 +55,10 @@ function App() {
         nextId.current += 1;
     };
 
+    const onRemove = id => {
+
+    };
+
       return (
         <>
             <CreateUser
