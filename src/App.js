@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import UserList from "./UserList";
+import CreateUser from "./CreateUser";
 
 
 
@@ -33,8 +34,8 @@ function App() {
 
       return (
         <>
+            <CreateUser />
             <UserList users={users}/>
-
         </>
       )
 }
