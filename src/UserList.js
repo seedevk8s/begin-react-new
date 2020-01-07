@@ -30,7 +30,11 @@ function UserList() {
 
     return (
         <div>
-
+            {
+                users.map(
+                    user => (<User user={user}/>)
+                )
+            }
         </div>
     );
 }
