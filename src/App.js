@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import UserList from "./UserList";
 
 
@@ -21,6 +21,8 @@ function App() {
             email: 'liz@example.com'
         }
     ];
+
+    const nextId = useRef(4);
 
       return (
         <UserList users={users}/>
