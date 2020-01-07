@@ -73,6 +73,8 @@ function App() {
         ));
     };
 
+    const count = CountActiveUsers(users);
+
       return (
         <>
             <CreateUser
@@ -81,6 +83,7 @@ function App() {
                 onChange={onChange}
                 onCreate={onCreate}/>
             <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
+            <div>활성 사용자 수: {count}</div>
         </>
       )
 }
