@@ -4,6 +4,7 @@ import CreateUser from "./CreateUser";
 
 function CountActiveUsers(users) {
     console.log('활성 사용자 수를 세는 중...');
+    return users.filter(users => users.active).length;
 }
 
 function App() {
