@@ -15,7 +15,13 @@ function UserList({users, onRemove}) {
         <div>
             {
                 users.map(
-                    (user, index) => (<User user={user} key={user.id} onRemove={onRemove}/>)
+                    (user, index) => (
+                        <User
+                            user={user}
+                            key={user.id}
+                            onRemove={onRemove}
+                        />
+                    )
                 )
             }
         </div>
