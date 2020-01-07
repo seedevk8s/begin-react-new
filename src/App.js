@@ -2,7 +2,9 @@ import React, { useRef, useState } from 'react';
 import UserList from "./UserList";
 import CreateUser from "./CreateUser";
 
-
+function CountActiveUsers(users) {
+    console.log('활성 사용자 수를 세는 중...');
+}
 
 function App() {
     const [inputs, setInputs] = useState({
