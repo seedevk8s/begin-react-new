@@ -19,7 +19,7 @@ function User({ user, onRemove }) {
     );
 }
 
-function UserList({users, onRemove}) {
+function UserList({users, onRemove, onToggle}) {
 
     return (
         <div>
@@ -30,6 +30,7 @@ function UserList({users, onRemove}) {
                             user={user}
                             key={user.id}
                             onRemove={onRemove}
+                            onToggle={onToggle}
                         />
                     )
                 )
