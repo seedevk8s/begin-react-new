@@ -3,12 +3,10 @@ import React, { useEffect } from 'react';
 
 function User({ user, onRemove, onToggle }) {
     const { username, email, id, active } = user;
+
     useEffect(() => {
-        console.log('컴포넌트가 화면에 나타남');
-        return () => {
-            console.log('컴포넌트가 화면에서 사라짐');
-        }
-    }, []);
+       console.log(user);
+    },[user]);
 
     return (
         <div>
