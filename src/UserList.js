@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function User({ user, onRemove }) {
+function User({ user, onRemove, onToggle }) {
     const { username, email, id, active } = user;
 
     return (
@@ -9,7 +9,8 @@ function User({ user, onRemove }) {
             <b style={{
                 color: active ? 'green' : 'black',
                 cursor: 'pointer'
-            }}>
+            }}
+            onClick={() => onToggle(id)}>
                 {username}
             </b>
             &nbsp;
