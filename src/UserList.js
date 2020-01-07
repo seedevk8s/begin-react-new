@@ -9,7 +9,10 @@ function User({ user, onRemove }) {
             <b style={{
                 color: active ? 'green' : 'black',
                 cursor: 'pointer'
-            }}>{username}</b> <span>({email})</span>
+            }}>
+                {username}
+            </b>
+            <span>({email})</span>
             <button onClick={() => onRemove(id)}>삭제</button>
         </div>
     );
