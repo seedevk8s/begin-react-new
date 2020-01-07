@@ -2,11 +2,14 @@ import React from 'react';
 
 
 function User({ user, onRemove }) {
-    const { username, email, id } = user;
+    const { username, email, id, active } = user;
 
     return (
         <div>
-            <b>{username}</b> <span>({email})</span>
+            <b style={{
+                color: active ? 'green' : 'black',
+                cursor: 'pointer'
+            }}>{username}</b> <span>({email})</span>
             <button onClick={() => onRemove(id)}>삭제</button>
         </div>
     );
