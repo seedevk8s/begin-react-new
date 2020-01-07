@@ -23,7 +23,9 @@ function InputSample() {
         setInputs({
             name: '',
             nickname: '',
-        })
+        });
+        nameInput.current.focus();
+
     };
 
     return (
