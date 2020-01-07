@@ -20,6 +20,9 @@ function CreateUser({ username, email, onChange, onCreate}) {
     );
 }
 
+export default CreateUser;
+
+
 
 
 

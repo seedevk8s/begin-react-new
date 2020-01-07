@@ -32,7 +32,10 @@ function App() {
     };
 
       return (
-        <UserList users={users}/>
+        <>
+            <UserList users={users}/>
+
+        </>
       )
 }
 
