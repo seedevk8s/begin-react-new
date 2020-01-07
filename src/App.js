@@ -66,7 +66,7 @@ function App() {
                 email={email}
                 onChange={onChange}
                 onCreate={onCreate}/>
-            <UserList users={users}/>
+            <UserList users={users} onRemove={onRemove}/>
         </>
       )
 }
