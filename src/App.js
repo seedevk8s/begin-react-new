@@ -1,10 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import UserList from "./UserList";
 import CreateUser from "./CreateUser";
 
 
 
 function App() {
+    const [inputs, setInputs] = useState({
+       username: '',
+       email: ''
+    });
+
     const users = [
         {
             id: 1,
