@@ -12,7 +12,11 @@ function App() {
 
     const { username, email } = inputs;
     const onChange = e => {
-
+        const { name, value } = e.target;
+        setInputs({
+            ...inputs,
+            [name]: value
+        });
     };
 
     const users = [
@@ -35,7 +39,7 @@ function App() {
 
     const nextId = useRef(4);
 
-    const oncreate = () => {
+    const onCreate = () => {
 
 
         console.log(nextId.current);
@@ -44,7 +48,7 @@ function App() {
 
       return (
         <>
-            <CreateUser />
+            <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}/>
             <UserList users={users}/>
         </>
       )
