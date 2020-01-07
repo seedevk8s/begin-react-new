@@ -62,6 +62,10 @@ function App() {
         setUsers(users.filter(user => user.id !== id));
     };
 
+    const onToggle = id => {
+
+    };
+
       return (
         <>
             <CreateUser
