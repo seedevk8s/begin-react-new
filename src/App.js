@@ -48,7 +48,11 @@ function App() {
 
       return (
         <>
-            <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}/>
+            <CreateUser
+                username={username}
+                email={email}
+                onChange={onChange}
+                onCreate={onCreate}/>
             <UserList users={users}/>
         </>
       )
