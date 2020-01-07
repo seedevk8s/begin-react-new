@@ -33,6 +33,7 @@ function InputSample() {
                 placeholder="이름"
                 onChange={onChange}
                 value={name}
+                ref={nameInput}
             />
             <input
                 name="nickname"
