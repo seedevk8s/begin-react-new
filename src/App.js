@@ -11,6 +11,9 @@ function App() {
     });
 
     const { username, email } = inputs;
+    const onChange = e => {
+
+    };
 
     const users = [
         {
