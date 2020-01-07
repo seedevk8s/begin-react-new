@@ -40,12 +40,17 @@ function App() {
     const nextId = useRef(4);
 
     const onCreate = () => {
+        const user = {
+          id: nextId.current,
+          username,
+          email
+        };
+
         setInputs({
            username: '',
            email: ''
         });
 
-        console.log(nextId.current);
         nextId.current += 1;
     };
 
