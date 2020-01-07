@@ -30,7 +30,8 @@ function UserList() {
 
     return (
         <div>
-            <User />
+            <User user={users[0]}/>
+
         </div>
     );
 }
