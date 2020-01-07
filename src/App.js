@@ -26,6 +26,9 @@ function App() {
 
     const oncreate = () => {
 
+
+        console.log(nextId.current);
+        nextId.current += 1;
     };
 
       return (
