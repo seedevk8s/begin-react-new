@@ -45,7 +45,7 @@ function reducer(state, action) {
                 }
             };
         default:
-            thrown new Error()
+            throw new Error('Unhandled action');
     }
 }
 
