@@ -66,8 +66,8 @@ function App() {
     }, []);
 
     const onToggle = useCallback(id => {
-        setUsers(users.map(
-            user => user => user.id === id
+        setUsers(users => users.map(
+            user => user.id === id
                 ? {...user, active: !user.active}
                 : user
         ));
