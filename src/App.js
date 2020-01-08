@@ -61,9 +61,9 @@ function App() {
         nextId.current += 1;
     }, [username,email, users]);
 
-    const onRemove = id => {
+    const onRemove = useCallback(id => {
         setUsers(users.filter(user => user.id !== id));
-    };
+    }, [users]);
 
     const onToggle = id => {
         setUsers(users.map(
