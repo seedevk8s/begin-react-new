@@ -62,8 +62,8 @@ function App() {
     }, [username,email]);
 
     const onRemove = useCallback(id => {
-        setUsers(users.filter(user => user.id !== id));
-    }, [users]);
+        setUsers(users => users.filter(user => user.id !== id));
+    }, []);
 
     const onToggle = useCallback(id => {
         setUsers(users.map(
