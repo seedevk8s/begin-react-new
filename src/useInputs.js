@@ -10,4 +10,7 @@ function useInputs(initialForm) {
     const reset = useCallback(() => setForm(initialForm), [initialForm]);
 
     return [ form, onChange, reset];
-}
+};
+
+export default useInputs;
+
