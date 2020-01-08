@@ -20,7 +20,9 @@ function Counter() {
        })
     };
     const onDecrease = () => {
-
+        dispatch({
+            type: 'DECREMENT'
+        })
     }
 
     return (
