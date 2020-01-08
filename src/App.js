@@ -35,7 +35,18 @@ const initialState = {
 };
 
 function reducer(state, action) {
-    return state;
+    switch (action.type) {
+        case 'CHANGE_INPUT':
+            return {
+                ...state,
+                inputs: {
+                    ...state.inputs,
+                    [action.name]: action.value
+                }
+            };
+        default:
+            thrown new Error()
+    }
 }
 
 function App() {
