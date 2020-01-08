@@ -44,6 +44,9 @@ function App() {
     const { users } = state;
     const { username, email } = state.inputs;
 
+    const onChange = useCallback(e => {
+
+    }, []);
 
       return (
         <>
