@@ -55,7 +55,11 @@ function App() {
 
       return (
         <>
-            <CreateUser username={username} email={email} onCreate={onChange}/>
+            <CreateUser
+                username={username}
+                email={email}
+                onCreate={onChange}
+            />
             <UserList users={[users]} />
             <div>활성 사용자 수: 0</div>
         </>
