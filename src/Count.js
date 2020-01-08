@@ -15,10 +15,12 @@ function Counter() {
     const [number, dispatch] = useReducer(reducer,0);
 
     const onIncrease = () => {
-        setNumber(prevNumber => prevNumber + 1);
-    }
+       dispatch({
+        type: 'INCREMENT'
+       })
+    };
     const onDecrease = () => {
-        setNumber(prevNumber => prevNumber - 1);
+
     }
 
     return (
