@@ -45,12 +45,17 @@ function App() {
     const { username, email } = state.inputs;
 
     const onChange = useCallback(e => {
-
+        const { name, value} = e.target;
+        dispatch({
+            type: 'CHANGE_INPUT',
+            name,
+            value
+        })
     }, []);
 
       return (
         <>
-            <CreateUser username={username} email={email}/>
+            <CreateUser username={username} email={email} onCreate={onChange}/>
             <UserList users={[users]} />
             <div>활성 사용자 수: 0</div>
         </>
