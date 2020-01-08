@@ -40,12 +40,9 @@ function App() {
       return (
         <>
             <CreateUser
-                username={username}
-                email={email}
-                onChange={onChange}
-                onCreate={onCreate}/>
-            <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
-            <div>활성 사용자 수: {count}</div>
+            />
+            <UserList users={[]}/>
+            <div>활성 사용자 수: 0</div>
         </>
       )
 }
