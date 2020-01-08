@@ -45,7 +45,7 @@ function App() {
 
     const nextId = useRef(4);
 
-    const onCreate = () => {
+    const onCreate = useCallback(() => {
         const user = {
           id: nextId.current,
           username,
@@ -59,7 +59,7 @@ function App() {
         });
 
         nextId.current += 1;
-    };
+    }, [username,email, users]);
 
     const onRemove = id => {
         setUsers(users.filter(user => user.id !== id));
