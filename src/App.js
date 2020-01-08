@@ -51,7 +51,7 @@ function App() {
           username,
           email
         };
-        setUsers(users.concat(user));
+        setUsers(users => users.concat(user));
 
         setInputs({
            username: '',
@@ -59,7 +59,7 @@ function App() {
         });
 
         nextId.current += 1;
-    }, [username,email, users]);
+    }, [username,email]);
 
     const onRemove = useCallback(id => {
         setUsers(users.filter(user => user.id !== id));
