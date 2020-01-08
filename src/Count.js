@@ -1,5 +1,13 @@
 import React, {useReducer} from 'react';
 
+{
+    type: 'INCREMENT',
+}
+
+{
+    type: 'DECREMENT',
+}
+
 function reducer(state, action) {
     
 }
